@@ -1,0 +1,32 @@
+class Persona{
+    constructor(edad,nombre,telefono){
+        this._edad=edad;
+        this._nombre=nombre;
+        this._telefono=telefono
+    }
+    get edad(){
+        return this._edad;
+    }
+    set edad(edad){
+        return this._edad=edad;
+    }
+    get nombre(){
+        return this._edad;
+    }
+    set nombre(nombre){
+        return this._nombre=nombre;
+    }
+    get telefono(){
+        return this._telefono;
+    }
+    set telefono(telefono){
+        return this._telefono=telefono
+    }
+};
+
+let persona = new Persona('22 años','Jaun','27889100');
+console.log(persona);
+persona.nombre='Jonas';
+persona.edad='23 años';
+persona.telefono='230101090';
+console.log(persona);
